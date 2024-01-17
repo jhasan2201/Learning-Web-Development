@@ -28,6 +28,7 @@ body {
     /*position: relative;*/
 }
 
+
 .box {
     width: 150px;
     height: 150px;
@@ -49,8 +50,8 @@ body {
 .relative {
     background-color: #f00;
     position:relative;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
 }
 
 .fixed {
