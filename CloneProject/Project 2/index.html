@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="main__container info">
+    <form action="">
+        <fieldset class="info__fieldset">
+            <div class="title">
+                <h1>Job Application</h1>
+                <h3>(Web)</h3>
+            </div>
+
+            <div class="duo">
+                <p class="duo_p ">
+                    <label class="info__label" for="first_name">First Name</label>
+                    <input class="info__input" type="text" name="first_name" id="first_name" placeholder="Enter First Name:">
+                </p>
+                <p class="duo_p ">
+                    <label class="info__label" for="last_name">Last Name</label>
+                    <input class="info__input" type="text" name="last_name" id="last_name" placeholder="Enter Last Name:">
+                </p>
+            </div>
+            <div class="duo">
+                <p class="duo_p ">
+                    <label class="info__label" for="email">Email</label>
+                    <input class="info__input" type="text" name="email" id="email" placeholder="Enter Email">
+                </p>
+                <p class="duo_p">
+                    <label class="info__label" for="job_roll">Job Roll</label>
+                    <select name="job_roll" id="job_roll"  multiple size="4">
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="Full-stack Developer">Full-stack Developer</option>
+                        <option value="UI-UX Designer">UI-UX Designer</option>
+                    </select>
+
+                </p>
+            </div>
+
+            <p class="duo_p ">
+                <label class="info__label" for="address">Address</label>
+                <textarea class="info__input"  name="address" id="address" placeholder="Enter Address" rows="2">
+                </textarea>
+            </p>
+
+            <div class="duo">
+                <p class="duo_p ">
+                    <label class="info__label" for="city">City</label>
+                    <input  class="info__input" type="text" name="city" id="city" placeholder="Enter City Name">
+                </p>
+                <p class="duo_p ">
+                    <label class="info__label" for="pincode">Pincode</label>
+                    <input  class="info__input" type="password" name="pincode" id="pincode" placeholder="Enter Pincode Name">
+                </p>
+            </div>
+            <div class="duo">
+                <p class="duo_p ">
+                    <label class="info__label" for="date">Date</label>
+                    <input  class="info__input" type="date" name="date" id="date" >
+                </p>
+                <p class="duo_p ">
+                    <label class="info__label" for="cv">Upload Your CV</label>
+                    <input  class="info__input filee" type="file" name="cv" id="cv">
+                </p>
+            </div>
+            <button class="info__button" type="submit">Apply Now</button>
+        </fieldset>
+    </form>
+
+</main>
+
+</body>
+</html>

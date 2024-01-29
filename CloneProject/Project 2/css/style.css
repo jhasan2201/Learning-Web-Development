@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea, label, input {
+    font-size: inherit;
+}
+
+:root {
+    --FF: 'Nunito', sans-serif;
+    --FS: clamp(1rem,2.2vh,1.2rem);
+
+    --BUTTON-COLOR: #fff;
+    --BUTTON-BGCOLOR: red;
+
+    --INPUT-COLOR: #ccc9c9;
+    --BGCOLOR: grey;
+    --BODY-BGCOLOR: #fff;
+
+
+    --MARGIN: 2rem;
+    --PADDING:1.5rem;
+
+
+    --BORDER-RADIUS: 15px;
+}
+
+html {
+    font-family: var(--FF);
+    font-size: var(--FS);
+    background-color: var(--BGCOLOR);
+}
+
+body {
+    min-width: 600px;
+    height: auto;
+}
+
+.main__article {
+    border: 0;
+}
+
+.main__container {
+    background-color: var(--BODY-BGCOLOR);
+    margin: var(--MARGIN) auto 0;
+
+    border-radius: var(--BORDER-RADIUS);
+    max-width: 600px;
+    min-height: 550px;
+    padding: var(--PADDING);
+    border: 0;
+}
+
+.info__fieldset {
+    border: 0;
+    width: 100%;
+    padding: var(--PADDING);
+}
+
+.duo {
+    display: flex;
+    flex-grow: 1;
+    padding: 1.2em;
+}
+
+.info__p {
+    display: block;
+}
+
+.title {
+    display: flex;
+    gap: 1rem;
+}
+
+.title h3 {
+    margin-top: 0.7rem;
+}
+
+.info__label {
+    font-weight: bold;
+}
+
+.info__input {
+    display: block;
+    width: 95%;
+}
+
+.info__button {
+    background-color: var(--BUTTON-BGCOLOR);
+    color: var(--BUTTON-COLOR);
+    padding: 0.3em;
+    border-radius: var(--BORDER-RADIUS);
+
+}
+
+.filee {
+    border: 1px solid black;
+    padding: 0.3em;
+}
