@@ -1,0 +1,99 @@
+
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --COLOR-WHITE: #fff;
+    --COLOR-DARK : #333;
+    --FONT-COLOR: #e5e5e5;
+
+    --FF: "Lato", sans-serif;
+    --FS: clamp(1rem,2vh,1.5rem);
+    --SFS: 0.8rem;
+
+    --PADDING: 0.5em;
+    --MARGIN: 2rem auto;
+}
+
+html {
+    font-family: var(--FF);
+    font-size: var(--FS);
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+p {
+    font-size: var(--SFS);
+    text-align: center;
+    line-height: 2.5;
+    padding: var(--PADDING);
+}
+
+.nature_1 {
+    background-image: url("../images/image1.png");
+    min-height: 100%;
+}
+
+.nature_2 {
+    background-image: url("../images/image2.png");
+    min-height: 400px;
+}
+
+.nature_3 {
+    background-image: url("../images/image3.png");
+    min-height: 400px;
+}
+
+.nature_1,
+.nature_2,
+.nature_3 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.write_bg {
+    position: absolute;
+    color: var(--COLOR-WHITE);
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.write {
+    padding: var(--PADDING);
+    background-color: var(--COLOR-DARK);
+}
+
+.section__h3 {
+    text-align: center;
+}
+
+.dark__section {
+    background-color: var(--COLOR-DARK);
+    color: var(--FONT-COLOR);
+}
+
+.white__section {
+    background-color: var(--COLOR-WHITE);
+    color: var(--COLOR-DARK);
+}
+
+.white__section,
+.dark__section {
+    padding: 50px 80px;
+}
+
+
