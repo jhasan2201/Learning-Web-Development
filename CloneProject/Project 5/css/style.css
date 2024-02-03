@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --FF:  'Roboto', sans-serif;
+    --FS: clamp(1rem,2.2v,1.5rem);
+
+    --BGCOLOR: #fff;
+    --COLOR: #000;
+
+    --HEADING-BGCOLOR: #219f3e;
+    --HEADING-COLOR: #fff;
+    --BUTTON-COLOR: #fabf6c;
+
+    --FOOTER-BGCOLOR: #fceedb;
+
+    --BORDER-COLOR: rgba(0, 0, 0, 0.4);
+
+    --GAP: 1rem;
+
+    --PADDING-TB: 0.5em;
+    --PADDING-SIDE: 2.5%;
+
+    --MARGIN: clamp(1em,2.5vh,1.5em);
+    --BORDER: 1px solid var(--BORDER-COLOR);
+    --SHADOW: 5px 5px 5px rgba(0, 0, 0, 0.11);
+}
+
+html,body {
+    font-family: var(--FF);
+    font-size: var(--FS);
+    line-height: 1.5;
+}
+
+.header {
+    box-shadow: var(--SHADOW);
+    position: sticky;
+    top: 0;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    background-color: var(--BGCOLOR);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /*max-width: 1200px;*/
+    gap: 50px;
+
+    margin: 0 auto;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+.hero__title {
+    min-width: 50%;
+    max-width: 600px;
+    line-height: 2;
+}
+.hero__h1 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.hero__hwrite {
+    width: 100%;
+    background-color: var(--HEADING-BGCOLOR);
+    color: var(--HEADING-COLOR);
+    padding: 0.4em 0.4em;
+    font-weight: 300;
+}
+
+.hero__btn {
+    margin: 0.1em;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    background-color: var(--BUTTON-COLOR);
+    border: 0;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+
+.main__offer {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+
+
+
+}
+
+.main__element {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+.main__menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu__h2 {
+    padding: 4rem 0;
+}
+
+.menu__picture {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    "p1 p1 p2 p3"
+    "p1 p1 p2 p7"
+    "p4 p5 p6 p7";
+}
+
+.menu__pic {
+    width: 100%;
+    height: 100%;
+}
+
+.pic1 {
+    grid-area: p1;
+}
+.pic2 {
+    grid-area: p2;
+}
+.pic3 {
+    grid-area: p3;
+}
+.pic4 {
+    grid-area: p4;
+}
+.pic5 {
+    grid-area: p5;
+}
+.pic6 {
+    grid-area: p6;
+}
+.pic7 {
+    grid-area: p7;
+}
+
+
